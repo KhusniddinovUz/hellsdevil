@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--  Local styles  -->
+    <link rel="stylesheet" href="home.css">
+    <!--  Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <!--  Font Awesome  -->
+    <script
+            src="https://kit.fontawesome.com/e0b1d3493e.js"
+            crossorigin="anonymous"
+    ></script>
+    <!--  Swiper Js  -->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Hells Devil</title>
+</head>
+<body onscroll="scrolled()">
+<nav id="navbar">
+    <div>
+        <img src="logo.png" alt="logo" width="60px" height="60px">
+    </div>
+    <div class="menu">
+        <a>Home</a>
+        <a>About me</a>
+        <a>eSports</a>
+    </div>
+</nav>
+<div id="bg"></div>
+<main class="container">
+    <div id="main-left">
+        <h3>Wild Rift Coaching by</h3>
+        <h1>Christiaan Enwiah</h1>
+        <p>Bring your game to the next level with my coaching. I am a 9x multi-role Challenger player and I've coached players
+            ranging from Bronze to Sovereign rank, I have worked as an analyst for competitive Wild Rift tournaments including
+            Worlds where I analyzed high-level Chinese games.
+        </p>
+        <div>
+            <a href="#prices" class="button">View Prices</a>
+            <a href="#reviews" class="button">View Reviews</a>
+        </div>
+    </div>
+    <div id="main-right">
+        <img src="./profile-pic.jpg" alt="portrait">
+    </div>
+    <div id="background"></div>
+</main>
+<div id="home-info">
+    <div class="container">
+        <div id="prices">
+            <h1>Wild Rift Coaching Services</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at excepturi explicabo! Architecto ipsum
+                iusto voluptatem?</p>
+            <div id="session-info">
+                <div id="availability">
+                    <h3>General Availability</h3>
+                    <h5>Timezone: Europe/Amsterdam</h5>
+                    <br>
+                    <div id="table">
+                        <div>
+                            <h3>Monday</h3>
+                            <h5>11:00 AM to 11:00 PM</h5>
+                        </div>
+                        <div>
+                            <h3>Tuesday</h3>
+                            <h5>11:00 AM to 11:00 PM</h5>
+                        </div>
+                        <div>
+                            <h3>Wednesday</h3>
+                            <h5>11:00 AM to 11:00 PM</h5>
+                        </div>
+                        <div>
+                            <h3>Thursday</h3>
+                            <h5>11:00 AM to 11:00 PM</h5>
+                        </div>
+                        <div>
+                            <h3>Friday</h3>
+                            <h5>11:00 AM to 11:00 PM</h5>
+                        </div>
+                        <div>
+                            <h3>Saturday</h3>
+                            <h5>11:00 AM to 11:00 PM</h5>
+                        </div>
+                        <div>
+                            <h3>Sunday</h3>
+                            <h5>11:00 AM to 11:00 PM</h5>
+                        </div>
+                    </div>
+                </div>
+                <form id="bundles">
+                    <div class="sessions" onclick="sessionsClicked(this)">
+                        <input type="radio" name="session" id="1"/>
+                        <h3>1 session</h3>
+                    </div>
+                    <div class="sessions" onclick="sessionsClicked(this)">
+                        <input type="radio" name="session" id="5"/>
+                        <h3>5 sessions</h3>
+                        <div class="saved">50€ saved</div>
+                    </div>
+                    <div class="sessions" onclick="sessionsClicked(this)">
+                        <input type="radio" name="session" id="10"/>
+                        <h3>10 sessions</h3>
+                        <div class="saved">100€ saved</div>
+                    </div>
+                    <a class="button" href="https://discordapp.com/users/hellsdevil/">Book now</a>
+                </form>
+            </div>
+        </div>
+        <div id="reviews">
+            <h1>What people say about me?</h1>
+            <div id="reviews-wrapper" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="review swiper-slide">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="review-user">
+                            <img src="./rank-images/Master-Rank.webp" alt="gm">
+                            <div>
+                                <h3>Master, 21 marks</h3>
+                                <h5>Wai</h5>
+                            </div>
+                        </div>
+                        <p>He helped me to discover my mistakes that I never knew. It makes me see the game from a new
+                            perspective!</p>
+                    </div>
+                    <div class="review swiper-slide">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="review-user">
+                            <img src="./rank-images/Grandmaster-Rank.webp" alt="gm">
+                            <div>
+                                <h3>Grandmaster</h3>
+                                <h5>BaronVg</h5>
+                            </div>
+                        </div>
+                        <p>EInitially it was underwhelming as I did not understand the mistakes I was making on map awareness,
+                            however the coaching allowed me to scout the map more often than to focus on my lane.</p>
+                    </div>
+                    <div class="review swiper-slide">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="review-user">
+                            <img src="./rank-images/Diamond-Rank.webp" alt="gm">
+                            <div>
+                                <h3>Diamond I</h3>
+                                <h5>MihoDLuffy 美穂#MDL</h5>
+                            </div>
+                        </div>
+                        <p>I was coached on how to play more efficiently in top lane. How to handle micro on laning. Also, how to
+                            be more impactful on macro of the game.</p>
+                    </div>
+                    <div class="review swiper-slide">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="review-user">
+                            <img src="./rank-images/Diamond-Rank.webp" alt="gm">
+                            <div>
+                                <h3>Diamond III</h3>
+                                <h5>TooFrozty</h5>
+                            </div>
+                        </div>
+                        <p> In my experience Hells is a very personable coach. He has vast knowledge in all roles. I've had 3 or
+                            more coaching sessions 5/5 stars I saw great results after the coaching sessions.</p>
+                    </div>
+                    <div class="review swiper-slide">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="review-user">
+                            <img src="./rank-images/Gold-Rank.webp" alt="gm">
+                            <div>
+                                <h3>Gold</h3>
+                                <h5>Inge</h5>
+                            </div>
+                        </div>
+                        <p> I had a great time! I really got some helpful tips that improved my gameplay a lot very quickly. If I
+                            get the chance Id take another coaching in the future for sure</p>
+                    </div>
+                    <div class="review swiper-slide">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="review-user">
+                            <img src="./rank-images/Emerald-Rank.webp" alt="gm">
+                            <div>
+                                <h3>Emerald</h3>
+                                <h5>Chuu</h5>
+                            </div>
+                        </div>
+                        <p>Eye opening for me cuz i wouldve never realised the mistakes i was making if not for the coaching
+                            session.</p>
+                    </div>
+                    <div class="review swiper-slide">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="review-user">
+                            <img src="./rank-images/Master-Rank.webp" alt="gm">
+                            <div>
+                                <h3>Master</h3>
+                                <h5>catkid</h5>
+                            </div>
+                        </div>
+                        <p> I'm an ekko OTP who was stuck in gold / low plat and hellsdevil helped me climb to dia/master by
+                            pointing out all the mistakes, bad choices, bad mechanics, that i was unknowingly making! Genuinely
+                            grateful to him. Also climbing wasn't even the point for me. It was the fact that it made me enjoy
+                            Ekko and WR so much more, and I'm still far from done learning from him!</p>
+                    </div>
+                    <div class="review swiper-slide">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="review-user">
+                            <img src="./rank-images/Master-Rank.webp" alt="gm">
+                            <div>
+                                <h3>Master</h3>
+                                <h5>Plontskii</h5>
+                            </div>
+                        </div>
+                        <p>My session with HellsDevil was a very positive experience. He coached me on fundamentals that I was
+                            missing and treated me with respect. Now every time I make sure to prioritize my perk on Akali play.
+                            Sometimes, after a good play I even say "That's for HellsDevil" in the chat.</p>
+                    </div>
+                    <div class="review swiper-slide">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="review-user">
+                            <img src="./rank-images/Master-Rank.webp" alt="gm">
+                            <div>
+                                <h3>Master</h3>
+                                <h5>Zapidoke</h5>
+                            </div>
+                        </div>
+                        <p>Hellsdevil has coached me for 3 sessions, I achieved my highest rank, Masters, a few
+                            months ago, now I'm trying to climb ranked again under Hellsdevil tutelage, he's helped me figure out
+                            a lot of macro mistakes I've been making. 5 star coach and content creator.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  // Stick navbar background
+  const scrolled = () => {
+    let navbar = document.getElementById("navbar");
+    navbar.style.backgroundColor = "#1A202C";
+  };
+
+  const sessionsClicked = (e) => {
+    let sessions = document.querySelectorAll(".sessions");
+    sessions.forEach(session => {
+      session.classList.remove("active")
+    })
+    e.classList.add("active")
+    e.children[0].checked = true;
+  }
+
+  // Swiper js
+  var swiper = new Swiper('.mySwiper', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: true,
+  });
+</script>
+<!--  FontAwesome Js  -->
+<script
+        integrity="sha512-m9S8W3a9hhBHPFAbEIaG7J9P92dzcAWwM42VvJp5n1/M599ldK6Z2st2SfJGsX0QR4LfCVr681vyU5vW8d218w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+></script>
+</html>
