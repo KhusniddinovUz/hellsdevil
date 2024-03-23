@@ -65,12 +65,12 @@ main #main-left p {
   margin-bottom: 50px;
 }
 main #main-left a {
+  font-size: 20px;
   text-decoration: none;
   font-weight: bold;
   color: #fff;
   margin-right: 30px;
   background: #B80000;
-  transition: all 1s;
 }
 main #main-left a:hover {
   text-decoration: underline;
