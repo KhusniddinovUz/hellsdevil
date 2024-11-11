@@ -106,7 +106,7 @@
                         <h3>10 sessions 275€</h3>
                         <div class="saved">75€ saved</div>
                     </div>
-                    <a class="button" href="https://discord.gg/EeU35zcDE5">Book now</a>
+                    <a class="button" target="_blank" href="https://discord.gg/EeU35zcDE5">Book now</a>
                 </form>
             </div>
         </div>
@@ -323,7 +323,26 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
+
+
     </div>
+    <footer>
+        <div class="footer-icons">
+            <a href="https://twitter.com/HellsDevil_" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@HellsDevilwildrift" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/hellsdevil_" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://discord.gg/EeU35zcDE5" target="_blank">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+        </div>
+        <p>&copy; HellsDevil</p>
+    </footer>
 </div>
 </div>
 </body>
@@ -336,6 +355,8 @@
     navbar.style.backgroundColor = "#1A202C";
   };
 
+
+  //Sessions clicked
   const sessionsClicked = (e) => {
     let sessions = document.querySelectorAll(".sessions");
     sessions.forEach(session => {
@@ -344,6 +365,18 @@
     e.classList.add("active")
     e.children[0].checked = true;
   }
+
+  //Navbar bottom line
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('#navbar');
+
+    // If user scrolls more than 50px, add the scrolled class
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
 
   // Swiper js
   var swiper = new Swiper('.mySwiper', {

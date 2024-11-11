@@ -221,7 +221,7 @@ main {
 ;
 
   #reviews {
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 
     h1 {
       text-align: center;
@@ -280,6 +280,51 @@ main {
   }
 }
 
+footer {
+  width: 100%;
+  padding: 50px 0;
+  border-top: 1px solid #fff;
+
+
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+
+    a {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid $secondary-color;
+      transition: 0.3s ease-in-out;
+
+
+      &:hover {
+        background: $secondary-color;
+      }
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        color: #fff;
+      }
+    }
+  }
+
+  p {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-size: 20px;
+  }
+}
 
 // Utility classes
 
@@ -299,4 +344,8 @@ main {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.scrolled {
+  border-bottom: 4px solid $secondary-color;
 }

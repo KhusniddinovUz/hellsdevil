@@ -189,7 +189,7 @@ main #background::after {
   font-size: 20px;
 }
 #home-info #reviews {
-  padding-bottom: 200px;
+  padding-bottom: 50px;
 }
 #home-info #reviews h1 {
   text-align: center;
@@ -237,6 +237,45 @@ main #background::after {
   position: absolute;
 }
 
+footer {
+  width: 100%;
+  padding: 50px 0;
+  border-top: 1px solid #fff;
+}
+footer .footer-icons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+}
+footer .footer-icons a {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #B80000;
+  transition: 0.3s ease-in-out;
+}
+footer .footer-icons a:hover {
+  background: #B80000;
+}
+footer .footer-icons a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #fff;
+}
+footer p {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  font-size: 20px;
+}
+
 .active {
   background-color: #B80000 !important;
 }
@@ -253,6 +292,10 @@ main #background::after {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.scrolled {
+  border-bottom: 4px solid #B80000;
 }
 
 /*# sourceMappingURL=home.css.map */
