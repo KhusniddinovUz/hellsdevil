@@ -26,6 +26,7 @@ nav .menu {
   justify-content: space-evenly;
 }
 nav .menu a {
+  text-decoration: none;
   font-weight: bold;
   outline: none;
   padding: 5px 20px;
@@ -187,6 +188,9 @@ main #background::after {
   text-decoration: none;
   padding: 20px 30px;
   font-size: 20px;
+}
+#home-info #prices #session-info #bundles a:hover {
+  text-decoration: underline;
 }
 #home-info #reviews {
   padding-bottom: 50px;
