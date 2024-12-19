@@ -154,6 +154,7 @@ main {
 #offers {
   background-color: $main-color;
   color: #fff;
+  padding-bottom: 50px;
 
   h1 {
     font-size: 50px;
@@ -172,7 +173,7 @@ main {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    row-gap: 100px;
+    row-gap: 65px;
     column-gap: 15%;
     border-radius: 50px;
 
@@ -193,6 +194,53 @@ main {
         font-weight: 900;
       }
     }
+  }
+}
+
+footer {
+  background-color: $main-color;
+  width: 100%;
+  padding: 50px 0;
+  border-top: 1px solid #fff;
+
+
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+
+    a {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid $secondary-color;
+      transition: 0.3s ease-in-out;
+
+
+      &:hover {
+        background: $secondary-color;
+      }
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        color: #fff;
+      }
+    }
+  }
+
+  p {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-size: 20px;
   }
 }
 
