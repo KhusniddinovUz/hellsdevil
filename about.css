@@ -99,13 +99,6 @@ main #main-left a {
 main #main-left a:hover {
   text-decoration: underline;
 }
-main #main-right {
-  text-align: center;
-}
-main #main-right img {
-  width: 400px;
-  border-radius: 50%;
-}
 main #background {
   z-index: -1;
   position: absolute;
@@ -129,94 +122,10 @@ main #background::after {
   backdrop-filter: blur(2px);
 }
 
-#offers {
-  background-color: #1A202C;
-  color: #fff;
-  padding-bottom: 50px;
-}
-#offers h1 {
-  font-size: 50px;
-  text-align: center;
-  padding-top: 60px;
-  margin-bottom: 20px;
-}
-#offers #offers-content {
-  background-color: #202632;
-  width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 50px 50px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  row-gap: 65px;
-  column-gap: 15%;
-  border-radius: 50px;
-}
-#offers #offers-content .offer {
-  width: 30%;
-}
-#offers #offers-content .offer .counter {
-  font-weight: bold;
-  font-size: 50px;
-}
-#offers #offers-content .offer .title {
-  color: #B80000;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: 900;
-}
-
-footer {
-  background-color: #1A202C;
-  width: 100%;
-  padding: 50px 0;
-  border-top: 1px solid #fff;
-}
-footer .footer-icons {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  gap: 50px;
-}
-footer .footer-icons a {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 3px solid #B80000;
-  transition: 0.3s ease-in-out;
-}
-footer .footer-icons a:hover {
-  background: #B80000;
-}
-footer .footer-icons a i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  color: #fff;
-}
-footer p {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  color: white;
-  font-size: 20px;
-}
-
 .container {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.scrolled {
-  border-bottom: 4px solid #B80000;
 }
 
 /*# sourceMappingURL=about.css.map */
