@@ -92,7 +92,7 @@ main #background {
   width: 100vw;
   max-width: 100%;
   height: 100vh;
-  background-image: url("./banner4.jpg");
+  background-image: url("images/banner4.jpg");
   background-size: cover;
 }
 main #background::after {
