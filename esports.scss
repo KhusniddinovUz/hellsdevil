@@ -1,0 +1,145 @@
+$main-color: #1A202C;
+$secondary-color: #B80000;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 15vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: $main-color;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  border-bottom: 4px solid $secondary-color;
+
+  .menu {
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      outline: none;
+      padding: 5px 20px;
+      margin-right: 50px;
+      background-color: $secondary-color;
+      color: #fff;
+      border-radius: 5px;
+      line-height: 30px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        color: $secondary-color;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+main {
+  height: 85vh;
+  background-color: $main-color;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  #video-content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 50px;
+
+    #esports-link {
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        margin-top: 15px;
+        text-decoration: none;
+        outline: none;
+        color: $secondary-color;
+        font-weight: 900;
+        font-size: 30px;
+        border-bottom: 2px solid #1A202C;
+
+        &:hover {
+          border-bottom: 2px solid $secondary-color;
+        }
+      }
+    }
+
+    video {
+      border-radius: 5px;
+      width: 400px;
+      height: 200px;
+    }
+  }
+
+  .mySwiper {
+    i {
+      cursor: pointer;
+      border: 5px solid $secondary-color;
+      border-radius: 50%;
+      background-color: $secondary-color;
+    }
+
+    #nextEl {
+      position: absolute;
+      top: 50%;
+      right: 50px;
+      z-index: 2;
+      transform: translateY(-50%);
+    }
+
+    #prevEl {
+      position: absolute;
+      top: 50%;
+      left: 50px;
+      z-index: 2;
+      transform: translateY(-50%);
+    }
+  }
+
+  .mySwiper {
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        border: 3px solid #fff;
+        padding: 30px 40px;
+        height: fit-content;
+        border-radius: 10px;
+        background-color: #242F3E;
+        font-size: 20px;
+        width: 60%;
+      }
+    }
+  }
+
+
+}
+
+
+// Utility class
+

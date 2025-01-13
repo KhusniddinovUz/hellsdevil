@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 15vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #1A202C;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  border-bottom: 4px solid #B80000;
+}
+nav .menu {
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav .menu a {
+  text-decoration: none;
+  font-weight: bold;
+  outline: none;
+  padding: 5px 20px;
+  margin-right: 50px;
+  background-color: #B80000;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+nav .menu a:hover {
+  color: #B80000;
+  background-color: #fff;
+}
+
+main {
+  height: 85vh;
+  background-color: #1A202C;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+main #video-content {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 50px;
+}
+main #video-content #esports-link {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #video-content #esports-link a {
+  margin-top: 15px;
+  text-decoration: none;
+  outline: none;
+  color: #B80000;
+  font-weight: 900;
+  font-size: 30px;
+  border-bottom: 2px solid #1A202C;
+}
+main #video-content #esports-link a:hover {
+  border-bottom: 2px solid #B80000;
+}
+main #video-content video {
+  border-radius: 5px;
+  width: 400px;
+  height: 200px;
+}
+main .mySwiper i {
+  cursor: pointer;
+  border: 5px solid #B80000;
+  border-radius: 50%;
+  background-color: #B80000;
+}
+main .mySwiper #nextEl {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+main .mySwiper #prevEl {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+main .mySwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .mySwiper .swiper-slide p {
+  border: 3px solid #fff;
+  padding: 30px 40px;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: #242F3E;
+  font-size: 20px;
+  width: 60%;
+}
+
+/*# sourceMappingURL=esports.css.map */

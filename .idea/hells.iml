@@ -9,5 +9,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="swiper" level="application" />
+    <orderEntry type="library" name="plyr.polyfilled" level="application" />
+    <orderEntry type="library" name="plyr" level="application" />
+    <orderEntry type="library" name="e0b1d3493e" level="application" />
   </component>
 </module>

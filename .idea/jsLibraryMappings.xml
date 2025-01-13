@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{swiper}" />
+    <file url="PROJECT" libraries="{e0b1d3493e, plyr, plyr.polyfilled, swiper}" />
   </component>
 </project>
