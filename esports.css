@@ -21,8 +21,18 @@ nav {
   z-index: 99;
   border-bottom: 4px solid #B80000;
 }
+nav .mobile-menu-icon {
+  z-index: 9999;
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  color: #B80000;
+}
 nav .menu {
-  height: 40px;
+  max-height: 40px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -114,6 +124,97 @@ main .mySwiper .swiper-slide p {
   background-color: #242F3E;
   font-size: 20px;
   width: 60%;
+}
+
+#mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #B80000;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  transition: 0.3s ease-in-out;
+}
+#mobile-menu .mobile-menu-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+#mobile-menu .mobile-menu-items {
+  font-size: xx-large;
+  width: 100vw;
+  text-align: center;
+  padding: 20px;
+}
+#mobile-menu .mobile-menu-items a {
+  display: inline-block;
+  color: white;
+  padding: 15px 30px;
+}
+
+@media (max-width: 799px) {
+  nav {
+    height: 10vh;
+    padding: 20px 0;
+  }
+  nav .mobile-menu-icon {
+    display: block;
+  }
+  nav .menu {
+    display: none;
+  }
+  main #video-content #esports-link {
+    display: none;
+  }
+  main .mySwiper #nextEl {
+    top: 35%;
+    right: 20px;
+    z-index: 2;
+  }
+  main .mySwiper #prevEl {
+    top: 35%;
+    left: 20px;
+    z-index: 2;
+  }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  nav {
+    padding: 20px 0;
+  }
+  main #video-content {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  main #video-content #esports-link {
+    margin-bottom: 50px;
+  }
+  main #video-content #esports-link h1 {
+    width: 100vw;
+  }
+  main #video-content #esports-link a {
+    max-width: 100vw;
+    margin-top: 5px;
+  }
+  main #video-content video {
+    border-radius: 5px;
+    width: 600px;
+    height: 300px;
+  }
+  main .mySwiper .swiper-slide p {
+    font-size: 20px;
+    padding: 15px;
+  }
 }
 
 /*# sourceMappingURL=esports.css.map */

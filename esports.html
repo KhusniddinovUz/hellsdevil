@@ -31,6 +31,9 @@
         <a href="about.html">About me</a>
         <a>eSports</a>
     </div>
+    <div class="mobile-menu-icon" id="icon-opener">
+        <i class="fa-solid fa-3x fa-bars"></i>
+    </div>
 </nav>
 <main class="container">
     <div id="video-content">
@@ -84,15 +87,39 @@
         <i id="prevEl" class="fa-solid fa-circle-chevron-left fa-3x"></i>
         <i id="nextEl" class="fa-solid fa-circle-chevron-right fa-3x"></i>
     </div>
+    <div id="mobile-menu">
+        <div class="mobile-menu-icon" id="icon-closer">
+            <i class="fa-solid fa-xmark fa-4x"></i>
+        </div>
+        <div class="mobile-menu-items">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="mobile-menu-items">
+            <a href="about.html">About me</a>
+        </div>
+        <div class="mobile-menu-items">
+            <a href="about.html">eSports</a>
+        </div>
+    </div>
 </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+  const iconOpener = document.getElementById("icon-opener");
+  const iconCloser = document.getElementById("icon-closer");
+  const mobileMenu = document.getElementById("mobile-menu");
   const nextEL = document.querySelector('.fa-circle-chevron-right');
   const prevEL = document.querySelector('.fa-circle-chevron-left');
-  nextEL.onclick = (evt) => {
-    console.log("next")
-  }
+
+  //Mobile menu switcher
+
+  iconCloser.addEventListener('click', () => {
+    mobileMenu.style.display = 'none';
+  });
+  iconOpener.addEventListener('click', () => {
+    mobileMenu.style.display = 'flex';
+  });
+
   // Swiper js
   var swiper = new Swiper('.mySwiper', {
     navigation: {
@@ -109,7 +136,6 @@
     },
     autoplay: false,
   });
-  swiper.nextEl = nextEL;
 </script>
 <!--  FontAwesome Js  -->
 <script
