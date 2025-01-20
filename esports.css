@@ -171,18 +171,33 @@ main .mySwiper .swiper-slide p {
   nav .menu {
     display: none;
   }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    height: 90vh;
+  }
+  main #video-content {
+    margin-bottom: 0;
+  }
+  main #video-content video {
+    width: 90%;
+    margin: auto;
+  }
   main #video-content #esports-link {
     display: none;
   }
+  main .mySwiper .swiper-slide p {
+    font-size: 18px;
+    padding: 15px;
+    width: 80%;
+  }
   main .mySwiper #nextEl {
-    top: 35%;
-    right: 20px;
-    z-index: 2;
+    display: none;
   }
   main .mySwiper #prevEl {
-    top: 35%;
-    left: 20px;
-    z-index: 2;
+    display: none;
   }
 }
 @media (min-width: 800px) and (max-width: 1200px) {

@@ -205,27 +205,43 @@ main {
   }
 
   main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    height: 90vh;
+
     #video-content {
+      margin-bottom: 0;
+
+      video {
+        width: 90%;
+        margin: auto;
+      }
+
       #esports-link {
         display: none;
       }
     }
 
     .mySwiper {
+      .swiper-slide {
+        p {
+          font-size: 18px;
+          padding: 15px;
+          width: 80%;
+        }
+      }
+
       #nextEl {
-        top: 35%;
-        right: 20px;
-        z-index: 2;
+        display: none;
       }
 
       #prevEl {
-        top: 35%;
-        left: 20px;
-        z-index: 2;
+        display: none;
       }
     }
   }
-
 }
 
 // Media Tablets
