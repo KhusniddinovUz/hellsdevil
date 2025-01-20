@@ -133,7 +133,7 @@ main .mySwiper .swiper-slide p {
   background-color: #B80000;
   display: none;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 99;
   justify-content: center;
   align-items: center;
@@ -174,9 +174,13 @@ main .mySwiper .swiper-slide p {
   main {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     justify-content: space-evenly;
     padding: 0;
     height: 90vh;
+  }
+  main #slide-container {
+    background-color: #1A202C;
   }
   main #video-content {
     margin-bottom: 0;
