@@ -16,7 +16,7 @@
             crossorigin="anonymous"
     ></script>
 </head>
-<body onscroll="scrolled()">
+<body>
 <nav id="navbar">
     <div>
         <img src="images/icon.PNG" alt="logo" height="60px">
@@ -25,6 +25,9 @@
         <a href="index.html">Home</a>
         <a>About me</a>
         <a href="esports.html">eSports</a>
+    </div>
+    <div class="mobile-menu-icon" id="icon-opener">
+        <i class="fa-solid fa-3x fa-bars"></i>
     </div>
 </nav>
 <div id="bg"></div>
@@ -68,6 +71,20 @@
         </div>
     </div>
     <div id="background"></div>
+    <div id="mobile-menu">
+        <div class="mobile-menu-icon" id="icon-closer">
+            <i class="fa-solid fa-xmark fa-4x"></i>
+        </div>
+        <div class="mobile-menu-items">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="mobile-menu-items">
+            <a href="about.html">About me</a>
+        </div>
+        <div class="mobile-menu-items">
+            <a href="esports.html">eSports</a>
+        </div>
+    </div>
 </main>
 <!--<div id="offers">-->
 <!--    <h1>WHAT HELLSDEVIL OFFERS</h1>-->
@@ -117,4 +134,20 @@
 <!--    <p>&copy; HellsDevil</p>-->
 <!--</footer>-->
 </body>
+<script>
+  const iconOpener = document.getElementById("icon-opener");
+  const iconCloser = document.getElementById("icon-closer");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  //Mobile menu switcher
+  iconCloser.addEventListener('click', () => {
+    document.body.style.overflow = '';
+    mobileMenu.style.display = 'none';
+  });
+  iconOpener.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+    document.body.style.overflow = 'hidden';
+    mobileMenu.style.display = 'flex';
+  });
+</script>
 </html>
