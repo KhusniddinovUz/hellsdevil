@@ -104,6 +104,7 @@ main #background {
   height: 100vh;
   background-image: url("images/banner4.jpg");
   background-size: cover;
+  background-position: center;
 }
 main #background::after {
   content: "";
@@ -361,6 +362,51 @@ footer p {
 @media (min-width: 800px) and (max-width: 1200px) {
   nav {
     padding: 20px 0;
+  }
+  main {
+    width: 100% !important;
+  }
+  main #main-left h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  main #main-left div {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 50px;
+  }
+  main #main-left div a {
+    margin: 0;
+  }
+  #home-info {
+    padding-top: 50px;
+  }
+  #home-info .container #prices #session-info {
+    grid-template-columns: 1fr 1fr;
+  }
+  #home-info .container #prices #session-info #availability {
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  #home-info .container #prices #session-info #bundles {
+    margin-top: 0;
+  }
+  #home-info .container #prices #session-info #bundles .sessions {
+    padding: 30px 0;
+  }
+  #home-info .container #prices #session-info #bundles .sessions h3 {
+    font-size: 16px;
+  }
+  #home-info .container #prices #session-info #bundles .sessions .saved {
+    top: 5px;
+    right: 0;
+  }
+  #home-info .container #prices #session-info #bundles .sessions input {
+    width: 30%;
   }
 }
 

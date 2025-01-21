@@ -372,6 +372,7 @@
   const iconOpener = document.getElementById("icon-opener");
   const iconCloser = document.getElementById("icon-closer");
   const mobileMenu = document.getElementById("mobile-menu");
+  let slidesPerView = 3;
 
   //Mobile menu switcher
   iconCloser.addEventListener('click', () => {
@@ -413,13 +414,33 @@
     }
   });
 
+  //Change swiper on tablets
+  // Define the media query
+  const mediaQuery = window.matchMedia('(min-width: 800px) and (max-width: 1200px)');
+
+  // Function to handle changes
+  function handleMediaQueryChange(e) {
+    if (e.matches) {
+      // Media query matches
+      slidesPerView = 1;
+    } else {
+      slidesPerView = 3;
+    }
+  }
+
+  // Add event listener for changes
+  mediaQuery.addEventListener('change', handleMediaQueryChange);
+
+  // Initial check
+  handleMediaQueryChange(mediaQuery);
+
   // Swiper js
   var swiper = new Swiper('.mySwiper', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    slidesPerView: 3,
+    slidesPerView: slidesPerView,
     spaceBetween: 30,
     freeMode: true,
     pagination: {
@@ -428,6 +449,8 @@
     },
     autoplay: true,
   });
+
+
 </script>
 <!--  FontAwesome Js  -->
 <script
