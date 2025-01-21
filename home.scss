@@ -419,6 +419,110 @@ footer {
       display: none;
     }
   }
+
+  main {
+    width: 100% !important;
+    display: flex;
+
+    #main-right {
+      display: none;
+    }
+
+    #main-left {
+      width: 100%;
+
+      p {
+        margin: auto;
+        width: 90%;
+      }
+
+      div {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 40px;
+
+        a {
+          margin: 0;
+        }
+      }
+
+      h1 {
+        text-align: center;
+        line-height: 1.1;
+        margin-top: 20px;
+      }
+
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+  #home-info {
+    padding-top: 50px;
+
+    .container {
+      width: 100% !important;
+
+      #prices {
+        padding-bottom: 50px;
+
+        #session-info {
+          display: flex;
+          flex-direction: column;
+
+          #availability {
+            width: 90%;
+            margin: 30px auto 0 auto;
+            padding-bottom: 20px;
+          }
+
+          #bundles {
+            width: 90%;
+            margin: 30px auto 0 auto;
+
+            .sessions {
+              width: 95%;
+              padding: 40px 0;
+
+              .saved {
+                top: 0;
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+
+      #reviews {
+        h1 {
+          width: 90%;
+          margin: auto;
+        }
+
+        #reviews-wrapper {
+          width: 90%;
+          margin: auto;
+        }
+      }
+    }
+
+    footer {
+      .footer-icons {
+        gap: 0;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        a {
+          width: 60px;
+          height: 60px;
+
+          i {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
 }
 
 //Tablets
@@ -484,10 +588,6 @@ footer {
             }
           }
         }
-      }
-
-      #reviews {
-
       }
     }
   }

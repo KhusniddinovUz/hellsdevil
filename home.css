@@ -358,6 +358,86 @@ footer p {
   nav .menu {
     display: none;
   }
+  main {
+    width: 100% !important;
+    display: flex;
+  }
+  main #main-right {
+    display: none;
+  }
+  main #main-left {
+    width: 100%;
+  }
+  main #main-left p {
+    margin: auto;
+    width: 90%;
+  }
+  main #main-left div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+  main #main-left div a {
+    margin: 0;
+  }
+  main #main-left h1 {
+    text-align: center;
+    line-height: 1.1;
+    margin-top: 20px;
+  }
+  main #main-left h3 {
+    text-align: center;
+  }
+  #home-info {
+    padding-top: 50px;
+  }
+  #home-info .container {
+    width: 100% !important;
+  }
+  #home-info .container #prices {
+    padding-bottom: 50px;
+  }
+  #home-info .container #prices #session-info {
+    display: flex;
+    flex-direction: column;
+  }
+  #home-info .container #prices #session-info #availability {
+    width: 90%;
+    margin: 30px auto 0 auto;
+    padding-bottom: 20px;
+  }
+  #home-info .container #prices #session-info #bundles {
+    width: 90%;
+    margin: 30px auto 0 auto;
+  }
+  #home-info .container #prices #session-info #bundles .sessions {
+    width: 95%;
+    padding: 40px 0;
+  }
+  #home-info .container #prices #session-info #bundles .sessions .saved {
+    top: 0;
+    right: 0;
+  }
+  #home-info .container #reviews h1 {
+    width: 90%;
+    margin: auto;
+  }
+  #home-info .container #reviews #reviews-wrapper {
+    width: 90%;
+    margin: auto;
+  }
+  #home-info footer .footer-icons {
+    gap: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #home-info footer .footer-icons a {
+    width: 60px;
+    height: 60px;
+  }
+  #home-info footer .footer-icons a i {
+    font-size: 35px;
+  }
 }
 @media (min-width: 800px) and (max-width: 1200px) {
   nav {
