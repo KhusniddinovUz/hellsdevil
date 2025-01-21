@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!--  Local styles  -->
     <link rel="stylesheet" href="home.css">
     <!--  Google Fonts  -->
@@ -31,6 +32,9 @@
         <a href="about.html">About me</a>
         <a href="esports.html">eSports</a>
     </div>
+    <div class="mobile-menu-icon" id="icon-opener">
+        <i class="fa-solid fa-3x fa-bars"></i>
+    </div>
 </nav>
 <div id="bg"></div>
 <main class="container">
@@ -52,6 +56,20 @@
         <img src="images/profile-pic.jpg" alt="portrait">
     </div>
     <div id="background"></div>
+    <div id="mobile-menu">
+        <div class="mobile-menu-icon" id="icon-closer">
+            <i class="fa-solid fa-xmark fa-4x"></i>
+        </div>
+        <div class="mobile-menu-items">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="mobile-menu-items">
+            <a href="about.html">About me</a>
+        </div>
+        <div class="mobile-menu-items">
+            <a href="esports.html">eSports</a>
+        </div>
+    </div>
 </main>
 <div id="home-info">
     <div class="container">
@@ -351,6 +369,21 @@
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+  const iconOpener = document.getElementById("icon-opener");
+  const iconCloser = document.getElementById("icon-closer");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  //Mobile menu switcher
+  iconCloser.addEventListener('click', () => {
+    document.body.style.overflow = '';
+    mobileMenu.style.display = 'none';
+  });
+  iconOpener.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+    document.body.style.overflow = 'hidden';
+    mobileMenu.style.display = 'flex';
+  });
+
   // Stick navbar background
   const scrolled = () => {
     let navbar = document.getElementById("navbar");

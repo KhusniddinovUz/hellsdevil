@@ -42,6 +42,16 @@ nav .menu a:hover {
   color: #B80000;
   background-color: #fff;
 }
+nav .mobile-menu-icon {
+  z-index: 9999;
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  color: #B80000;
+}
 
 main {
   display: grid;
@@ -300,6 +310,58 @@ footer p {
 
 .scrolled {
   border-bottom: 4px solid #B80000;
+}
+
+#mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #B80000;
+  display: none;
+  width: 100vw;
+  height: 100%;
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  transition: 0.3s ease-in-out;
+}
+#mobile-menu .mobile-menu-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+#mobile-menu .mobile-menu-items {
+  font-size: xx-large;
+  width: 100vw;
+  text-align: center;
+  padding: 20px;
+}
+#mobile-menu .mobile-menu-items a {
+  display: inline-block;
+  color: white;
+  padding: 15px 30px;
+}
+
+@media (max-width: 799px) {
+  nav {
+    height: 10vh;
+    padding: 20px 0;
+  }
+  nav .mobile-menu-icon {
+    display: block;
+  }
+  nav .menu {
+    display: none;
+  }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  nav {
+    padding: 20px 0;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
