@@ -208,6 +208,9 @@ main .mySwiper .swiper-slide p {
   nav {
     padding: 20px 0;
   }
+  main #slide-container {
+    background-color: #1A202C;
+  }
   main #video-content {
     justify-content: center;
     align-items: center;

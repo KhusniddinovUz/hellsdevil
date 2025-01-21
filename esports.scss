@@ -255,6 +255,9 @@ main {
     padding: 20px 0;
   }
   main {
+    #slide-container {
+      background-color: $main-color;
+    }
 
     #video-content {
       justify-content: center;
