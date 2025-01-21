@@ -127,9 +127,11 @@
   //Mobile menu switcher
 
   iconCloser.addEventListener('click', () => {
+    document.body.style.overflow = '';
     mobileMenu.style.display = 'none';
   });
   iconOpener.addEventListener('click', () => {
+    document.body.style.overflow = 'hidden';
     mobileMenu.style.display = 'flex';
   });
 
